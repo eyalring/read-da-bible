@@ -1,10 +1,12 @@
 const readable = require('stream').Readable;
+const internetWordsCounter = require('./internetreader');
 
-const text = "heeelllo i added you a name , i didnt mean to let you down 3 5 , i really feel this is a miss"
+const myInternetWordsCounter = new internetWordsCounter.InternetWordsCounter({source : 'http://www.gutenberg.org/cache/epub/10/pg10.txt'});
+const result = readWrapper('to');
 
+async function readWrapper(word){
+    const result = await myInternetWordsCounter.readIt(word);
+    console.log('the result is : ',result);
+}
 
-const myReadable = readable();
-
-
-myReadable.push(text);
 
