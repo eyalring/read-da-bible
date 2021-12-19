@@ -1,0 +1,3 @@
+1.with only one option *2 
+2.without any options
+3.when there is a problem with the internet page.

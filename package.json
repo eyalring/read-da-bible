@@ -1,0 +1,30 @@
+{
+  "name": "readdabible",
+  "version": "1.0.0",
+  "description": "counting words from an internet page",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --testTimeout=30000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyalring/read-da-bible.git"
+  },
+  "author": "eyal.ringwald",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyalring/read-da-bible/issues"
+  },
+  "homepage": "https://github.com/eyalring/read-da-bible#readme",
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.4.5",
+    "supertest": "^6.1.6"
+  }
+}
